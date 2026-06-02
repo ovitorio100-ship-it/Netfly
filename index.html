@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ai Atende - Implementação especializada de Kommo CRM no WhatsApp. Automatize seu comercial, organize seu funil de vendas e venda mais.">
+  <title>Ai Atende | Parceiro Oficial Kommo CRM - Implementação de WhatsApp CRM</title>
+  
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- SEO Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='8' y='72' width='6' height='6' rx='1.5' fill='%233B82F6'/%3E%3Cpath d='M 15 78 L 22 78 L 44 45 L 33 51 Z' fill='%233B82F6'/%3E%3Cpath d='M 42 30 L 49 18 L 89 78 L 74 78 Z' fill='%233B82F6'/%3E%3Cpath d='M 82 35 L 89 25 L 89 78 L 82 78 Z' fill='%233B82F6'/%3E%3Cpath d='M 74 78 L 46 78 C 42 78 39 75 39 71 C 39 64 43 59 50 59 L 61 59 L 57 65 L 50 65 C 47 65 45 67 45 70 C 45 72 46 73 48 73 L 71 73 Z' fill='%233B82F6'/%3E%3Crect x='82' y='11' width='7' height='7' rx='2' fill='%233B82F6'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- SECTION 1 — HEADER (Sticky) -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#" class="logo-link" aria-label="Ai Atende Home">
+        <div class="logo-text">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#3B82F6"/>
+            <g transform="translate(4.5, 5.3) scale(0.24)">
+              <rect x="8" y="72" width="6" height="6" rx="1.5" fill="white"/>
+              <path d="M 15 78 L 22 78 L 44 45 L 33 51 Z" fill="white"/>
+              <path d="M 42 30 L 49 18 L 89 78 L 74 78 Z" fill="white"/>
+              <path d="M 82 35 L 89 25 L 89 78 L 82 78 Z" fill="white"/>
+              <path d="M 74 78 L 46 78 C 42 78 39 75 39 71 C 39 64 43 59 50 59 L 61 59 L 57 65 L 50 65 C 47 65 45 67 45 70 C 45 72 46 73 48 73 L 71 73 Z" fill="white"/>
+              <rect x="82" y="11" width="7" height="7" rx="2" fill="white"/>
+            </g>
+          </svg>
+          Ai<span>Atende</span>
+        </div>
+      </a>
+      
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#recursos" class="nav-link">Recursos</a></li>
+          <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
+          <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+          <li><a href="#faq" class="nav-link">Perguntas Frequentes</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <a href="https://wa.me/558193830343?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20diagn%C3%B3stico%20de%20WhatsApp%20CRM%20para%20minha%20empresa." class="btn btn-primary" target="_blank" rel="noopener noreferrer">Falar com Especialista</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 2 — HERO CENTRALIZADO -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge">
+        <svg width="12" height="13" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: #3B82F6;">
+          <path d="M19.6 21.8h-4a5 5 0 0 1-3.8-2L9.2 16l-2-2.9a.8.8 0 0 0-1.3.5v6.9a1.2 1.2 0 0 1-1.2 1.2H1.2A1.2 1.2 0 0 1 0 20.6v-5.2a4.6 4.6 0 0 1 4.6-4.6h1l.3-.2 3.3-4.8 2.5-3.6a5 5 0 0 1 3.8-2h4a.4.4 0 0 1 .3.6L14 9.3a3 3 0 0 0 0 3.2l6 8.7a.4.4 0 0 1-.3.6" fill="currentColor"/>
+        </svg>
+        Parceiro Oficial Kommo CRM
+      </div>
+      <h1 class="hero-title">
+        Organize Seu WhatsApp e Venda Mais com o<br>
+        <span class="text-primary">Kommo CRM Implementado</span>
+      </h1>
+      <p class="hero-subtitle">
+        Implementamos do zero. Sem você programar. Sua equipe comercial vende mais com atendimento estruturado, sem precisar aumentar o time.
+      </p>
+      <div class="hero-cta-wrapper">
+        <a href="https://wa.me/558193830343?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20diagn%C3%B3stico%20de%20WhatsApp%20CRM%20para%20minha%20empresa." class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Falar com Especialista</a>
+      </div>
+      <ul class="hero-benefits">
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Parceiro Oficial
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Implementação Completa
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          1 Mês Grátis
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 3 — MOCKUP DO PRODUTO -->
+  <section class="mockup-section">
+    <div class="container">
+      <div class="mockup-wrapper">
+        <div class="mockup-header-bar">
+          <div class="mockup-dot red"></div>
+          <div class="mockup-dot yellow"></div>
+          <div class="mockup-dot green"></div>
+          <div style="margin-left: 20px; font-size: 0.75rem; color: #94A3B8; font-weight: 500;">kommo.com/web/pipeline</div>
+        </div>
+        <!-- Custom visual mockup vector -->
+        <svg class="mockup-content" viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="800" height="480" fill="#F8FAFC"/>
+          <!-- Top nav dashboard -->
+          <rect x="0" y="0" width="800" height="48" fill="#FFFFFF"/>
+          <line x1="0" y1="48" x2="800" y2="48" stroke="#E2E8F0" stroke-width="1"/>
+          <circle cx="28" cy="24" r="12" fill="#E2E8F0"/>
+          <rect x="52" y="16" width="80" height="16" rx="4" fill="#E2E8F0"/>
+          
+          <rect x="680" y="12" width="96" height="24" rx="12" fill="#3B82F6"/>
+          <text x="696" y="28" fill="white" font-family="Outfit" font-size="10" font-weight="bold">Novo Lead</text>
+          
+          <!-- Side nav -->
+          <rect x="0" y="48" width="56" height="432" fill="#0F172A"/>
+          <rect x="12" y="68" width="32" height="32" rx="8" fill="#3B82F6" fill-opacity="0.2"/>
+          <svg x="20" y="75" width="16" height="18" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.6 21.8h-4a5 5 0 0 1-3.8-2L9.2 16l-2-2.9a.8.8 0 0 0-1.3.5v6.9a1.2 1.2 0 0 1-1.2 1.2H1.2A1.2 1.2 0 0 1 0 20.6v-5.2a4.6 4.6 0 0 1 4.6-4.6h1l.3-.2 3.3-4.8 2.5-3.6a5 5 0 0 1 3.8-2h4a.4.4 0 0 1 .3.6L14 9.3a3 3 0 0 0 0 3.2l6 8.7a.4.4 0 0 1-.3.6" fill="#3B82F6"/>
+          </svg>
+          <circle cx="28" cy="130" r="8" fill="#38BDF8" fill-opacity="0.3"/>
+          <circle cx="28" cy="180" r="8" fill="#475569"/>
+          <circle cx="28" cy="230" r="8" fill="#475569"/>
+          
+          <!-- Pipeline Columns -->
+          <!-- Col 1 -->
+          <rect x="76" y="68" width="164" height="30" rx="6" fill="#EFF6FF"/>
+          <text x="88" y="87" fill="#1E40AF" font-family="Outfit" font-size="11" font-weight="700">Entrada de Leads (3)</text>
+          <circle cx="224" cy="83" r="4" fill="#3B82F6"/>
+          
+          <!-- Lead Card 1 -->
+          <g filter="url(#shadow-card)">
+            <rect x="76" y="110" width="164" height="90" rx="8" fill="#FFFFFF"/>
+            <rect x="88" y="122" width="100" height="12" rx="3" fill="#0F172A"/>
+            <rect x="88" y="142" width="70" height="8" rx="2" fill="#94A3B8"/>
+            <!-- Tags -->
+            <rect x="88" y="166" width="48" height="16" rx="4" fill="#E0F2FE"/>
+            <text x="94" y="177" fill="#0369A1" font-family="Outfit" font-size="8" font-weight="700">WhatsApp</text>
+            <!-- User photo placeholder -->
+            <circle cx="218" cy="174" r="10" fill="#E2E8F0"/>
+            <path d="M76 110h4v90h-4z" fill="#3B82F6"/>
+          </g>
+
+          <!-- Lead Card 2 -->
+          <g filter="url(#shadow-card)">
+            <rect x="76" y="212" width="164" height="90" rx="8" fill="#FFFFFF"/>
+            <rect x="88" y="224" width="85" height="12" rx="3" fill="#0F172A"/>
+            <rect x="88" y="244" width="50" height="8" rx="2" fill="#94A3B8"/>
+            <rect x="88" y="268" width="40" height="16" rx="4" fill="#FEF3C7"/>
+            <text x="94" y="279" fill="#D97706" font-family="Outfit" font-size="8" font-weight="700">Filtro R$50k</text>
+            <circle cx="218" cy="276" r="10" fill="#CBD5E1"/>
+            <path d="M76 212h4v90h-4z" fill="#3B82F6"/>
+          </g>
+
+          <!-- Col 2 -->
+          <rect x="256" y="68" width="164" height="30" rx="6" fill="#F0FDF4"/>
+          <text x="268" y="87" fill="#166534" font-family="Outfit" font-size="11" font-weight="700">Contato Realizado (2)</text>
+          <circle cx="404" cy="83" r="4" fill="#22C55E"/>
+
+          <!-- Lead Card 3 -->
+          <g filter="url(#shadow-card)">
+            <rect x="256" y="110" width="164" height="90" rx="8" fill="#FFFFFF"/>
+            <rect x="268" y="122" width="110" height="12" rx="3" fill="#0F172A"/>
+            <rect x="268" y="142" width="80" height="8" rx="2" fill="#94A3B8"/>
+            <rect x="268" y="166" width="54" height="16" rx="4" fill="#DCFCE7"/>
+            <text x="274" y="177" fill="#15803D" font-family="Outfit" font-size="8" font-weight="700">Aguard. Retorno</text>
+            <circle cx="398" cy="174" r="10" fill="#FEE2E2"/>
+            <path d="M256 110h4v90h-4z" fill="#22C55E"/>
+          </g>
+
+          <!-- Col 3 -->
+          <rect x="436" y="68" width="164" height="30" rx="6" fill="#FDF2F8"/>
+          <text x="448" y="87" fill="#9D174D" font-family="Outfit" font-size="11" font-weight="700">Reunião Agendada (1)</text>
+          <circle cx="584" cy="83" r="4" fill="#EC4899"/>
+
+          <!-- Lead Card 4 -->
+          <g filter="url(#shadow-card)">
+            <rect x="436" y="110" width="164" height="90" rx="8" fill="#FFFFFF"/>
+            <rect x="48" y="0" width="0" height="0"/> <!-- Empty dummy -->
+            <rect x="448" y="122" width="95" height="12" rx="3" fill="#0F172A"/>
+            <rect x="448" y="142" width="60" height="8" rx="2" fill="#94A3B8"/>
+            <rect x="448" y="166" width="58" height="16" rx="4" fill="#FCE7F3"/>
+            <text x="454" y="177" fill="#C2185B" font-family="Outfit" font-size="8" font-weight="700">Diagnóstico</text>
+            <circle cx="578" cy="174" r="10" fill="#E0F2FE"/>
+            <path d="M436 110h4v90h-4z" fill="#EC4899"/>
+          </g>
+
+          <!-- Col 4 -->
+          <rect x="616" y="68" width="164" height="30" rx="6" fill="#FFF7ED"/>
+          <text x="628" y="87" fill="#9A3412" font-family="Outfit" font-size="11" font-weight="700">Proposta Enviada (1)</text>
+          <circle cx="764" cy="83" r="4" fill="#F97316"/>
+
+          <!-- Lead Card 5 -->
+          <g filter="url(#shadow-card)">
+            <rect x="616" y="110" width="164" height="90" rx="8" fill="#FFFFFF"/>
+            <rect x="628" y="122" width="115" height="12" rx="3" fill="#0F172A"/>
+            <rect x="628" y="142" width="75" height="8" rx="2" fill="#94A3B8"/>
+            <rect x="628" y="166" width="50" height="16" rx="4" fill="#FFEDD5"/>
+            <text x="634" y="177" fill="#C2410C" font-family="Outfit" font-size="8" font-weight="700">Em Negociação</text>
+            <circle cx="758" cy="174" r="10" fill="#D1FAE5"/>
+            <path d="M616 110h4v90h-4z" fill="#F97316"/>
+          </g>
+
+          <!-- Filter Definitions -->
+          <defs>
+            <filter id="shadow-card" x="72" y="108" width="172" height="98" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="2"/>
+              <feGaussianBlur stdDeviation="3"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0.0588 0 0 0 0 0.0902 0 0 0 0 0.165 0 0 0 0.06 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 — FAIXA DE LOGOS -->
+  <section class="logos-section text-center">
+    <div class="container">
+      <h2 class="logos-title">Mais de 50 empresas já organizaram seu comercial com a Ai Atende</h2>
+      <div class="logos-slider-container">
+        <div class="logos-track">
+          <!-- Logo 1: Doce Mania -->
+          <div class="logo-item">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            Doce Mania
+          </div>
+          <!-- Logo 2: Clínica Nelson Coutinho -->
+          <div class="logo-item">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            Clínica Nelson Coutinho
+          </div>
+          <!-- Logo 3: CTV Imperial -->
+          <div class="logo-item">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            CTV Imperial
+          </div>
+          <!-- Logo 4: GLX -->
+          <div class="logo-item">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            GLX Holding
+          </div>
+          <!-- Logo 5: Savasi Games -->
+          <div class="logo-item">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"></rect><path d="M6 12h4M8 10v4M15 11v.01M18 13v.01"></path></svg>
+            Savasi Games
+          </div>
+          <!-- Logo 6: Mutirão da Visão -->
+          <div class="logo-item">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            Mutirão da Visão
+          </div>
+          
+          <!-- Duplicate set for infinite loop visual effect -->
+          <div class="logo-item">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            Doce Mania
+          </div>
+          <div class="logo-item">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            Clínica Nelson Coutinho
+          </div>
+          <div class="logo-item">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            CTV Imperial
+          </div>
+          <div class="logo-item">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            GLX Holding
+          </div>
+          <div class="logo-item">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"></rect><path d="M6 12h4M8 10v4M15 11v.01M18 13v.01"></path></svg>
+            Savasi Games
+          </div>
+          <div class="logo-item">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            Mutirão da Visão
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Wave curve transition clear to dark at the end of section -->
+    <div class="wave-transition">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,90.38,27.72,188,55.33,263.29,67.23,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- SECTION 5 — DEPOIMENTOS (Fundo Escuro, cards horizontais) -->
+  <section class="section section-dark testimonials-section" id="depoimentos">
+    <div class="container text-center">
+      <h2 class="section-title">Resultados reais dos nossos clientes</h2>
+      <p class="section-subtitle">Veja como nossa implementação do Kommo CRM está transformando o comercial de empresas que buscam alta produtividade.</p>
+      
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="stars">
+              <!-- SVG Star x5 -->
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="testimonial-text">
+              "Antes da Ai Atende, nossa equipe perdia leads no WhatsApp constantemente. A organização das colunas no Kommo e as automações de triagem triplicaram nosso aproveitamento de novos contatos."
+            </p>
+          </div>
+          <div class="testimonial-user">
+            <!-- Simulated custom avatar using placeholder -->
+            <div class="user-avatar" style="background: #3B82F6; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-family: Outfit;">RC</div>
+            <div class="user-info text-left" style="text-align: left;">
+              <h4>Rodrigo Costa</h4>
+              <p>Diretor Comercial</p>
+            </div>
+            <div class="company-logo">Doce Mania</div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 2 (Destaque Azul) -->
+        <div class="testimonial-card featured">
+          <div>
+            <div class="stars">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="testimonial-text">
+              "A implementação estruturada pela equipe mudou completamente nosso pós-consulta. O sistema agora agenda retornos automaticamente, reduzindo faltas e organizando a agenda dos nossos médicos de forma brilhante."
+            </p>
+          </div>
+          <div class="testimonial-user">
+            <div class="user-avatar" style="background: #10B981; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-family: Outfit;">NC</div>
+            <div class="user-info text-left" style="text-align: left;">
+              <h4>Dr. Nelson Coutinho</h4>
+              <p>Diretor Clínico</p>
+            </div>
+            <div class="company-logo">Clínica NC</div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="stars">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="testimonial-text">
+              "Com mais de 10 vendedores ativos, o principal desafio era a falta de processos homogêneos. Com o funil unificado no Kommo e as integrações, nossa gestão comercial ficou 100% transparente."
+            </p>
+          </div>
+          <div class="testimonial-user">
+            <div class="user-avatar" style="background: #EC4899; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-family: Outfit;">AM</div>
+            <div class="user-info text-left" style="text-align: left;">
+              <h4>Aline Moura</h4>
+              <p>Gerente de Operações</p>
+            </div>
+            <div class="company-logo">CTV Imperial</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6 — RECURSOS COM SCREENSHOT (Impulsione seu trabalho) -->
+  <section class="section section-light features-section" id="recursos">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 50px;">
+        <h2 class="section-title" style="color: var(--text-light-main);">Impulsione seu comercial com uma implementação especializada</h2>
+      </div>
+      
+      <div class="features-split">
+        <!-- Feature items list selector (Left) -->
+        <div class="features-list">
+          <button class="feature-tab-btn active" data-target="feat-pipeline">
+            <h3><span>1</span> Pipeline de Vendas Personalizado</h3>
+            <p>Configuração de funis de vendas específicos e personalizados para a jornada de compra do seu cliente, garantindo visibilidade total do funil.</p>
+          </button>
+          
+          <button class="feature-tab-btn" data-target="feat-automations">
+            <h3><span>2</span> Automações e Follow-up Inteligente</h3>
+            <p>Disparo automático de mensagens personalizadas no WhatsApp com base nas ações do lead, evitando a perda de contatos quentes.</p>
+          </button>
+          
+          <button class="feature-tab-btn" data-target="feat-qualification">
+            <h3><span>3</span> Qualificação de Leads Automática</h3>
+            <p>Robôs inteligentes para realizar a triagem inicial e qualificar os contatos qualificados antes de entregar o lead diretamente ao consultor humano.</p>
+          </button>
+          
+          <div class="features-desc-block">
+            <strong>Implementação Transparente</strong>
+            <p>Configuramos tudo nativamente dentro do Kommo, integrado ao seu WhatsApp oficial e ferramentas que sua empresa já usa no dia a dia.</p>
+          </div>
+        </div>
+        
+        <!-- Mockup Visual Display (Right) -->
+        <div class="feature-mockups-panel">
+          <!-- Pane 1 -->
+          <div class="feature-pane active" id="feat-pipeline">
+            <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" rx="12" fill="#FFFFFF"/>
+              <!-- Pipeline layout visual simulation -->
+              <rect x="20" y="20" width="110" height="24" rx="4" fill="#EFF6FF"/>
+              <rect x="145" y="20" width="110" height="24" rx="4" fill="#F0FDF4"/>
+              <rect x="270" y="20" width="110" height="24" rx="4" fill="#FFF7ED"/>
+              
+              <!-- Column 1 Card -->
+              <rect x="20" y="55" width="110" height="60" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+              <rect x="30" y="65" width="60" height="8" rx="2" fill="#94A3B8"/>
+              <rect x="30" y="80" width="40" height="6" rx="2" fill="#CBD5E1"/>
+              
+              <!-- Column 2 Card -->
+              <rect x="145" y="55" width="110" height="60" rx="6" fill="#FFFFFF" stroke="#3B82F6" stroke-width="1.5"/>
+              <rect x="155" y="65" width="70" height="8" rx="2" fill="#3B82F6"/>
+              <rect x="155" y="80" width="50" height="6" rx="2" fill="#94A3B8"/>
+              <rect x="155" y="92" width="30" height="10" rx="3" fill="#DCFCE7"/>
+              
+              <!-- Column 3 Card -->
+              <rect x="270" y="55" width="110" height="60" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+              <rect x="280" y="65" width="65" height="8" rx="2" fill="#94A3B8"/>
+              <rect x="280" y="80" width="45" height="6" rx="2" fill="#CBD5E1"/>
+              
+              <!-- Arrows pointing progress -->
+              <path d="M230 170 H 170" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 4"/>
+              <polygon points="170,166 162,170 170,174" fill="#3B82F6"/>
+              
+              <rect x="120" y="190" width="160" height="70" rx="10" fill="#0F172A"/>
+              <text x="140" y="220" fill="#38BDF8" font-family="Outfit" font-size="12" font-weight="bold">Pipeline Comercial</text>
+              <text x="140" y="240" fill="#FFFFFF" font-family="Outfit" font-size="10">Visibilidade completa da equipe</text>
+            </svg>
+          </div>
+          
+          <!-- Pane 2 -->
+          <div class="feature-pane" id="feat-automations">
+            <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" rx="12" fill="#FFFFFF"/>
+              <!-- Trigger Card -->
+              <rect x="40" y="40" width="320" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+              <rect x="56" y="52" width="24" height="24" rx="12" fill="#3B82F6" fill-opacity="0.1"/>
+              <circle cx="68" cy="64" r="5" fill="#3B82F6"/>
+              <text x="92" y="62" fill="#0F172A" font-family="Outfit" font-size="12" font-weight="bold">Gatilho: Novo Lead cadastrado no site</text>
+              <text x="92" y="78" fill="#64748B" font-family="Outfit" font-size="10">Executar ação imediatamente</text>
+              
+              <!-- Action Line -->
+              <path d="M200 100 V 160" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 4"/>
+              <polygon points="196,160 200,168 204,160" fill="#3B82F6"/>
+              
+              <!-- Action Card (WhatsApp Message) -->
+              <rect x="40" y="180" width="320" height="80" rx="8" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+              <rect x="56" y="196" width="24" height="24" rx="12" fill="#10B981" fill-opacity="0.1"/>
+              <!-- WhatsApp check mark icon visual -->
+              <path d="M62 208l4 4 8-8" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="92" y="208" fill="#065F46" font-family="Outfit" font-size="12" font-weight="bold">Enviar mensagem de boas-vindas no WhatsApp</text>
+              <text x="92" y="226" fill="#047857" font-family="Outfit" font-size="10" font-weight="500">"Olá {Nome}, identificamos seu interesse no CRM..."</text>
+              <text x="92" y="244" fill="#64748B" font-family="Outfit" font-size="9">Tempo de resposta médio: 3 segundos</text>
+            </svg>
+          </div>
+          
+          <!-- Pane 3 -->
+          <div class="feature-pane" id="feat-qualification">
+            <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" rx="12" fill="#FFFFFF"/>
+              <!-- Interactive chatbot dialogue visual mockup -->
+              <!-- Bot message 1 -->
+              <rect x="20" y="20" width="260" height="54" rx="10" fill="#F1F5F9"/>
+              <text x="32" y="40" fill="#0F172A" font-family="Outfit" font-size="11" font-weight="600">Qual o faturamento mensal da sua empresa hoje?</text>
+              <text x="32" y="58" fill="#64748B" font-family="Outfit" font-size="9">Enviada pelo assistente virtual</text>
+              
+              <!-- Lead reply (buttons) -->
+              <rect x="180" y="86" width="200" height="36" rx="18" fill="#3B82F6"/>
+              <text x="200" y="108" fill="#FFFFFF" font-family="Outfit" font-size="11" font-weight="bold">Faturamento acima de R$ 50k/mês</text>
+              
+              <!-- Logic filter action box -->
+              <rect x="20" y="136" width="360" height="50" rx="6" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+              <text x="36" y="156" fill="#92400E" font-family="Outfit" font-size="11" font-weight="700">Validação do Lead: Aprovado</text>
+              <text x="36" y="172" fill="#B45309" font-family="Outfit" font-size="10">Classificação: Lead Quente -> Direcionar para equipe comercial</text>
+              
+              <!-- Final state assignment -->
+              <rect x="20" y="200" width="360" height="74" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+              <rect x="36" y="214" width="24" height="24" rx="6" fill="#3B82F6"/>
+              <text x="72" y="228" fill="#1E40AF" font-family="Outfit" font-size="11" font-weight="700">Operador Comercial Atribuído</text>
+              <text x="72" y="246" fill="#1E40AF" font-family="Outfit" font-size="10">Consultor Vinicius notificado via app Kommo no celular</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7 — "TUDO QUE VOCÊ PRECISA" (Tudo o que você precisa pra escalar — sem contratar) -->
+  <section class="section need-section" id="como-funciona">
+    <div class="container text-center">
+      <div class="badge">Sua Operação Pronta</div>
+      <h2 class="section-title" style="color: var(--text-light-main);">Tudo o que você precisa pra escalar — sem contratar</h2>
+      <p class="section-subtitle">Feito sob medida para empresários estruturados, sem exigir conhecimento técnico.</p>
+      
+      <div class="need-grid">
+        <!-- Deliverable 1 -->
+        <div class="need-card">
+          <div class="need-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+          </div>
+          <h3>Implementação sem você fazer nada</h3>
+          <p>Configuramos chatbots inteligentes, automações do funil e todos os pipelines visuais. Você não escreve nenhuma linha de código.</p>
+          <div class="need-illustration">
+            <svg width="100%" height="110" viewBox="0 0 300 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="110" fill="#FAFAFA"/>
+              <!-- Pipeline visual simplified -->
+              <rect x="20" y="25" width="70" height="20" rx="4" fill="#3B82F6" fill-opacity="0.15"/>
+              <rect x="100" y="25" width="70" height="20" rx="4" fill="#22C55E" fill-opacity="0.15"/>
+              <rect x="180" y="25" width="70" height="20" rx="4" fill="#F59E0B" fill-opacity="0.15"/>
+              <rect x="20" y="55" width="70" height="40" rx="4" fill="white" stroke="#E2E8F0"/>
+              <rect x="100" y="55" width="70" height="40" rx="4" fill="white" stroke="#E2E8F0"/>
+              <circle cx="135" cy="75" r="10" fill="#3B82F6"/>
+              <!-- Check icon -->
+              <path d="M132 75l2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        
+        <!-- Deliverable 2 -->
+        <div class="need-card">
+          <div class="need-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          </div>
+          <h3>Conecte suas ferramentas</h3>
+          <p>Integramos nativamente os canais de WhatsApp, sistemas de anúncios, calendários, landing pages e ferramentas que você já usa.</p>
+          <div class="need-illustration">
+            <svg width="100%" height="110" viewBox="0 0 300 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="110" fill="#FAFAFA"/>
+              <!-- Tools interconnected -->
+              <circle cx="70" cy="55" r="22" fill="#E0F2FE" stroke="#3B82F6" stroke-width="1.5"/>
+              <text x="60" y="59" fill="#0369A1" font-family="Outfit" font-size="11" font-weight="bold">WP</text>
+              <circle cx="150" cy="55" r="24" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+              <svg x="140" y="44" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6 21.8h-4a5 5 0 0 1-3.8-2L9.2 16l-2-2.9a.8.8 0 0 0-1.3.5v6.9a1.2 1.2 0 0 1-1.2 1.2H1.2A1.2 1.2 0 0 1 0 20.6v-5.2a4.6 4.6 0 0 1 4.6-4.6h1l.3-.2 3.3-4.8 2.5-3.6a5 5 0 0 1 3.8-2h4a.4.4 0 0 1 .3.6L14 9.3a3 3 0 0 0 0 3.2l6 8.7a.4.4 0 0 1-.3.6" fill="#1E40AF"/>
+              </svg>
+              <circle cx="230" cy="55" r="22" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+              <text x="220" y="59" fill="#B45309" font-family="Outfit" font-size="11" font-weight="bold">Ads</text>
+              <!-- Connection paths -->
+              <path d="M92 55 H 126" stroke="#3B82F6" stroke-width="2" stroke-dasharray="3 3"/>
+              <path d="M174 55 H 208" stroke="#3B82F6" stroke-width="2" stroke-dasharray="3 3"/>
+            </svg>
+          </div>
+        </div>
+        
+        <!-- Deliverable 3 (Destaque Azul) -->
+        <div class="need-card featured">
+          <div class="need-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <h3>Deixe o comercial rodar organizado</h3>
+          <p>O lead entra, o robô qualifica, o Kommo cria a tarefa automaticamente e o vendedor conduz o cliente até o fechamento. Sem caos comercial.</p>
+          <div class="need-illustration">
+            <svg width="100%" height="110" viewBox="0 0 300 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="110" fill="#F0FDF4"/>
+              <!-- Pipeline flow chart simulation -->
+              <rect x="30" y="45" width="70" height="24" rx="12" fill="#E2E8F0"/>
+              <text x="46" y="61" fill="#475569" font-family="Outfit" font-size="9" font-weight="bold">Entrada</text>
+              <rect x="115" y="45" width="70" height="24" rx="12" fill="#3B82F6"/>
+              <text x="127" y="61" fill="white" font-family="Outfit" font-size="9" font-weight="bold">Qualificação</text>
+              <rect x="200" y="45" width="70" height="24" rx="12" fill="#22C55E"/>
+              <text x="218" y="61" fill="white" font-family="Outfit" font-size="9" font-weight="bold">Venda</text>
+              <!-- Connecting lines -->
+              <path d="M100 57 H 115" stroke="#CBD5E1" stroke-width="2"/>
+              <path d="M185 57 H 200" stroke="#CBD5E1" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8 — FEATURE DESTAQUE (Apresentando CRM Kanban) -->
+  <section class="section highlight-section">
+    <div class="container text-center">
+      <div class="badge">Aceleração de Vendas</div>
+      <h2 class="section-title">Apresentando... <span class="text-primary">Seu Funil Organizado</span></h2>
+      <p class="section-subtitle">Gerencie leads, histórico e o fluxo de tarefas da equipe com total clareza e controle estratégico.</p>
+      
+      <!-- Visual representation of Kanban Pipeline -->
+      <div class="highlight-mockup">
+        <svg viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto;">
+          <rect width="800" height="240" rx="8" fill="#F8FAFC"/>
+          <!-- 3 Columns -->
+          <rect x="20" y="20" width="240" height="30" rx="6" fill="#EFF6FF"/>
+          <text x="32" y="39" fill="#1E40AF" font-family="Outfit" font-size="12" font-weight="bold">WhatsApp Triagem (8 leads)</text>
+          
+          <rect x="280" y="20" width="240" height="30" rx="6" fill="#FFFBEB"/>
+          <text x="292" y="39" fill="#92400E" font-family="Outfit" font-size="12" font-weight="bold">Diagnóstico Agendado (3)</text>
+          
+          <rect x="540" y="20" width="240" height="30" rx="6" fill="#F0FDF4"/>
+          <text x="552" y="39" fill="#166534" font-family="Outfit" font-size="12" font-weight="bold">Negociação Fechada (20)</text>
+          
+          <!-- Cards -->
+          <!-- Card 1 -->
+          <rect x="20" y="60" width="240" height="70" rx="6" fill="white" stroke="#E2E8F0"/>
+          <rect x="32" y="72" width="120" height="10" rx="2" fill="#1E293B"/>
+          <rect x="32" y="88" width="80" height="6" rx="2" fill="#94A3B8"/>
+          <rect x="32" y="104" width="60" height="14" rx="4" fill="#3B82F6" fill-opacity="0.15"/>
+          <text x="38" y="114" fill="#3B82F6" font-family="Outfit" font-size="8" font-weight="bold">Aguardando Resposta</text>
+          
+          <!-- Card 2 -->
+          <rect x="280" y="60" width="240" height="70" rx="6" fill="white" stroke="#E2E8F0"/>
+          <rect x="292" y="72" width="100" height="10" rx="2" fill="#1E293B"/>
+          <rect x="292" y="88" width="60" height="6" rx="2" fill="#94A3B8"/>
+          <rect x="292" y="104" width="70" height="14" rx="4" fill="#FFFBEB"/>
+          <text x="298" y="114" fill="#B45309" font-family="Outfit" font-size="8" font-weight="bold">Agendado Hoje 14h</text>
+          
+          <!-- Card 3 -->
+          <rect x="540" y="60" width="240" height="70" rx="6" fill="white" stroke="#22C55E" stroke-width="1.5"/>
+          <rect x="552" y="72" width="140" height="10" rx="2" fill="#1E293B"/>
+          <rect x="552" y="88" width="90" height="6" rx="2" fill="#94A3B8"/>
+          <rect x="552" y="104" width="50" height="14" rx="4" fill="#DCFCE7"/>
+          <text x="558" y="114" fill="#15803D" font-family="Outfit" font-size="8" font-weight="bold">Contrato Assinado</text>
+          
+          <!-- Card 4 (Stacked visual below card 1) -->
+          <rect x="20" y="140" width="240" height="70" rx="6" fill="white" stroke="#E2E8F0"/>
+          <rect x="32" y="152" width="130" height="10" rx="2" fill="#1E293B"/>
+          <rect x="32" y="168" width="50" height="6" rx="2" fill="#94A3B8"/>
+          <rect x="32" y="184" width="60" height="14" rx="4" fill="#E2E8F0"/>
+          <text x="38" y="194" fill="#64748B" font-family="Outfit" font-size="8" font-weight="bold">Novo Lead</text>
+        </svg>
+      </div>
+      
+      <!-- Bullet list below mockup -->
+      <div class="highlight-features">
+        <div class="highlight-feat-item">
+          <div class="highlight-feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+          </div>
+          <p>Mantenha-se organizado</p>
+        </div>
+        <div class="highlight-feat-item">
+          <div class="highlight-feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <p>Equipe colaborando</p>
+        </div>
+        <div class="highlight-feat-item">
+          <div class="highlight-feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </div>
+          <p>Acompanhe o progresso</p>
+        </div>
+        <div class="highlight-feat-item">
+          <div class="highlight-feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline></svg>
+          </div>
+          <p>Automatize o processo</p>
+        </div>
+      </div>
+      
+      <a href="https://wa.me/558193830343?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20diagn%C3%B3stico%20de%20WhatsApp%20CRM%20para%20minha%20empresa." class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Falar com Especialista</a>
+    </div>
+  </section>
+
+  <!-- SECTION 9 — INTEGRAÇÕES (Integrador) -->
+  <section class="section section-dark integrations-section">
+    <div class="container text-center">
+      <div class="badge" style="background-color: rgba(59, 130, 246, 0.2); color: #60A5FA; border-color: rgba(96, 165, 250, 0.3);">Flexibilidade</div>
+      <h2 class="section-title">Integrador</h2>
+      <p class="section-subtitle">Conexões nativas e robustas configuradas diretamente no Kommo CRM da sua empresa.</p>
+      
+      <div class="integrations-grid">
+        <!-- Cat 1 -->
+        <div class="integration-category">
+          <div class="category-title">
+            Soluções de IA
+            <span class="category-badge">Inteligência</span>
+          </div>
+          <div class="tool-list">
+            <div class="tool-item">
+              <div class="tool-logo-wrapper">🤖</div>
+              <span class="tool-name">ChatGPT</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-logo-wrapper">🧠</div>
+              <span class="tool-name">Claude AI</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-logo-wrapper">✨</div>
+              <span class="tool-name">Gemini</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cat 2 -->
+        <div class="integration-category">
+          <div class="category-title">
+            Marketing & Ads
+            <span class="category-badge">Tráfego</span>
+          </div>
+          <div class="tool-list">
+            <div class="tool-item">
+              <div class="tool-logo-wrapper">G</div>
+              <span class="tool-name">Google Ads</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-logo-wrapper">M</div>
+              <span class="tool-name">Meta Ads</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-logo-wrapper">AC</div>
+              <span class="tool-name">ActiveCampaign</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cat 3 (Destaque CRM) -->
+        <div class="integration-category featured">
+          <div class="category-title">
+            CRM & Vendas
+            <span class="category-badge">Foco</span>
+          </div>
+          <div class="tool-list">
+            <div class="tool-item highlight-tool">
+              <div class="tool-logo-wrapper">
+                <svg width="16" height="18" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+                  <path d="M19.6 21.8h-4a5 5 0 0 1-3.8-2L9.2 16l-2-2.9a.8.8 0 0 0-1.3.5v6.9a1.2 1.2 0 0 1-1.2 1.2H1.2A1.2 1.2 0 0 1 0 20.6v-5.2a4.6 4.6 0 0 1 4.6-4.6h1l.3-.2 3.3-4.8 2.5-3.6a5 5 0 0 1 3.8-2h4a.4.4 0 0 1 .3.6L14 9.3a3 3 0 0 0 0 3.2l6 8.7a.4.4 0 0 1-.3.6" fill="currentColor"/>
+                </svg>
+              </div>
+              <span class="tool-name">Kommo CRM</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-logo-wrapper">P</div>
+              <span class="tool-name">Pipedrive</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-logo-wrapper">RD</div>
+              <span class="tool-name">RD Station</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cat 4 -->
+        <div class="integration-category">
+          <div class="category-title">
+            E-commerce
+            <span class="category-badge">Vendas</span>
+          </div>
+          <div class="tool-list">
+            <div class="tool-item">
+              <div class="tool-logo-wrapper">S</div>
+              <span class="tool-name">Shopify</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-logo-wrapper">N</div>
+              <span class="tool-name">Nuvemshop</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-logo-wrapper">ML</div>
+              <span class="tool-name">Mercado Livre</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Minimalist tools logos strip -->
+      <div class="integrations-band">
+        <span style="font-weight: 700; color: var(--text-dark-muted);">WhatsApp Business API</span>
+        <span style="font-weight: 700; color: var(--text-dark-muted);">Kommo API</span>
+        <span style="font-weight: 700; color: var(--text-dark-muted);">n8n Integrations</span>
+        <span style="font-weight: 700; color: var(--text-dark-muted);">Webhooks Customizados</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10 — COMPARATIVO SEM vs COM (Solução que faz a diferença) -->
+  <section class="section compare-section">
+    <div class="container text-center">
+      <div class="badge">Comparação Rápida</div>
+      <h2 class="section-title" style="color: var(--text-light-main);">Solução que faz a diferença</h2>
+      <p class="section-subtitle">Organize, atenda e converta oportunidades de forma estruturada e previsível.</p>
+      
+      <div class="compare-grid">
+        <!-- Card Sem Ai Atende -->
+        <div class="compare-card negative">
+          <h3>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            Sem a Ai Atende
+          </h3>
+          <ul class="compare-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              WhatsApp bagunçado e cheio de conversas abertas
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Lentidão e demora no atendimento comercial
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Trabalho comercial manual, repetitivo e sujeito a erros
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Sem acompanhamento centralizado e histórico dos clientes
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              Equipe comercial sobrecarregada com tarefas burocráticas
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Card Com Ai Atende (Destaque) -->
+        <div class="compare-card positive">
+          <h3>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Com a Ai Atende
+          </h3>
+          <ul class="compare-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Kommo organizado por colunas de atendimento e etapas
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Atendimento estruturado e resposta em menos de 1 minuto
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Automações ativas enviando follow-up automaticamente
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Acompanhamento completo de histórico e métricas comerciais
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Equipe focada estritamente em vender e fechar negócios
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 11 — PLANOS SUBSTITUÍDO POR FALE COM ESPECIALISTA -->
+  <section class="section consultative-section">
+    <div class="container">
+      <div class="consultative-card">
+        <div class="badge">
+          <svg width="12" height="13" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.6 21.8h-4a5 5 0 0 1-3.8-2L9.2 16l-2-2.9a.8.8 0 0 0-1.3.5v6.9a1.2 1.2 0 0 1-1.2 1.2H1.2A1.2 1.2 0 0 1 0 20.6v-5.2a4.6 4.6 0 0 1 4.6-4.6h1l.3-.2 3.3-4.8 2.5-3.6a5 5 0 0 1 3.8-2h4a.4.4 0 0 1 .3.6L14 9.3a3 3 0 0 0 0 3.2l6 8.7a.4.4 0 0 1-.3.6" fill="currentColor"/>
+          </svg>
+          Parceiro Oficial Certificado Kommo
+        </div>
+        <h3>Pronto pra organizar seu comercial?</h3>
+        <p>Desenvolvemos uma implementação 100% personalizada para os processos do seu negócio. Fale com um de nossos especialistas e ganhe um Diagnóstico de Processos gratuito.</p>
+        
+        <div class="deliverables-checklist">
+          <div class="deliverable-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Diagnóstico de Processo
+          </div>
+          <div class="deliverable-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Setup e Configuração
+          </div>
+          <div class="deliverable-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Pipelines Customizados
+          </div>
+          <div class="deliverable-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Automações de WhatsApp
+          </div>
+          <div class="deliverable-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Treinamento da Equipe
+          </div>
+          <div class="deliverable-item" style="color: #60A5FA;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="color: #60A5FA;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            1 Mês de Licença Grátis
+          </div>
+        </div>
+        
+        <a href="https://wa.me/558193830343?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20diagn%C3%B3stico%20de%20WhatsApp%20CRM%20para%20minha%20empresa." class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Falar com Especialista</a>
+        
+        <div class="guarantee-block">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          Segurança no processo. Metodologia certificada e suporte contínuo.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 12 — FAQ + FOOTER (Restou alguma dúvida?) -->
+  <section class="section faq-section" id="faq">
+    <!-- Wave curve transition from dark to light visual -->
+    <div class="wave-transition" style="top: 0; bottom: auto; transform: none;">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,90.38,27.72,188,55.33,263.29,67.23,321.39,56.44Z" class="shape-fill" style="fill: var(--bg-light-alt);"></path>
+      </svg>
+    </div>
+    
+    <div class="container text-center" style="padding-top: 60px;">
+      <h2 class="section-title" style="color: var(--text-light-main);">Restou alguma dúvida?</h2>
+      <p class="section-subtitle">Tire suas principais dúvidas sobre o processo de implementação do Kommo CRM.</p>
+      
+      <div class="faq-accordion">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            Como funciona a implementação?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            <p>Nós mapeamos o seu processo de vendas comercial atual, criamos a conta oficial no Kommo CRM, integramos com o WhatsApp Business API, criamos os chatbots de triagem automáticos, desenhamos os funis visuais e fazemos o treinamento prático ao vivo com a sua equipe.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            Quanto tempo leva pra ficar pronto?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            <p>O tempo médio para entrega de toda a estrutura rodando com funis, integrações e testes práticos finalizados é de 15 a 21 dias úteis, variando de acordo com a complexidade dos fluxos.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            Preciso entender de tecnologia?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            <p>Não. Nós realizamos todo o trabalho pesado de configuração técnica e integrações de API. Sua única responsabilidade será validar as etapas com nosso especialista e assistir ao treinamento.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            O que está incluso no serviço?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            <p>Incluso: mapeamento estratégico, configuração do Kommo, conexão oficial de WhatsApp API, bots qualificadores, templates de mensagens rápidas, integração de tráfego pago (Meta/Google), dashboard de métricas e suporte prioritário pós-implementação.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            Vocês treinam minha equipe?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            <p>Sim. O treinamento da equipe comercial e dos gestores é parte essencial da nossa metodologia de entrega. Gravamos a sessão e entregamos um manual para novos membros da equipe.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            Como funciona o 1 mês grátis de licença?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            <p>Como somos Parceiros Oficiais Certificados Kommo, conseguimos estender o período gratuito de testes do software de 14 para 30 dias para novas contas criadas sob a nossa parceria.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ 7 -->
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            Atende empresas de qual porte?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            <p>Nosso foco principal e maior benefício de retorno sobre o investimento são empresas estruturadas que faturam acima de R$ 50k por mês e possuem equipe dedicada de atendimento comercial.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ 8 -->
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            Como falo com um especialista?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            <p>Clique em qualquer um dos botões "Falar com Especialista" nesta página, preencha as breves informações no formulário para triagem rápida e um consultor entrará em contato em instantes pelo seu próprio WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-info">
+          <div class="logo-text">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="#3B82F6"/>
+              <g transform="translate(4.5, 5.3) scale(0.24)">
+                <rect x="8" y="72" width="6" height="6" rx="1.5" fill="white"/>
+                <path d="M 15 78 L 22 78 L 44 45 L 33 51 Z" fill="white"/>
+                <path d="M 42 30 L 49 18 L 89 78 L 74 78 Z" fill="white"/>
+                <path d="M 82 35 L 89 25 L 89 78 L 82 78 Z" fill="white"/>
+                <path d="M 74 78 L 46 78 C 42 78 39 75 39 71 C 39 64 43 59 50 59 L 61 59 L 57 65 L 50 65 C 47 65 45 67 45 70 C 45 72 46 73 48 73 L 71 73 Z" fill="white"/>
+                <rect x="82" y="11" width="7" height="7" rx="2" fill="white"/>
+              </g>
+            </svg>
+            Ai<span>Atende</span>
+          </div>
+          <p class="footer-desc">Soluções inteligentes de automação e implementação de Kommo CRM para escalar seu comercial no WhatsApp.</p>
+          <div class="footer-cnpj">CNPJ: 00.000.000/0001-00</div>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#como-funciona">Como Funciona</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#faq">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Parceiro Integrador</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2026 Ai Atende. Todos os direitos reservados. Parceiro Certificado Kommo CRM.</div>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram Ai Atende">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn Ai Atende">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONVERSION MODAL FORM -->
+  <div class="modal" id="diagnostic-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close" aria-label="Fechar formulário">&times;</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h3 id="modal-title">Diagnóstico Gratuito</h3>
+          <p>Preencha os campos abaixo e qualifique sua empresa para iniciar a estruturação do seu WhatsApp CRM.</p>
+        </div>
+        
+        <form id="diagnostic-form" novalidate>
+          <div class="form-group">
+            <label for="lead-name">Nome Completo</label>
+            <input type="text" id="lead-name" class="form-control" placeholder="Digite seu nome" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="lead-phone">WhatsApp</label>
+            <input type="tel" id="lead-phone" class="form-control" placeholder="(00) 00000-0000" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="lead-email">E-mail Corporativo</label>
+            <input type="email" id="lead-email" class="form-control" placeholder="exemplo@empresa.com.br" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="lead-segment">Segmento da Empresa</label>
+            <select id="lead-segment" class="form-control" required>
+              <option value="" disabled selected>Selecione seu segmento...</option>
+              <option value="Serviços B2B">Prestação de Serviços / B2B</option>
+              <option value="Clínicas e Saúde">Clínica / Área da Saúde</option>
+              <option value="E-commerce e Varejo">E-commerce / Loja Virtual</option>
+              <option value="Imobiliário">Imobiliária / Incorporadora</option>
+              <option value="Tecnologia e SaaS">Tecnologia / Software</option>
+              <option value="Educação e Cursos">Educação / Treinamentos</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="lead-revenue">Faturamento Mensal</label>
+            <select id="lead-revenue" class="form-control" required>
+              <option value="" disabled selected>Selecione a faixa...</option>
+              <option value="Até R$ 20k">Até R$ 20.000 / mês</option>
+              <option value="R$ 20k a R$ 50k">R$ 20.000 a R$ 50.000 / mês</option>
+              <option value="R$ 50k a R$ 100k">R$ 50.000 a R$ 100.000 / mês</option>
+              <option value="R$ 100k a R$ 250k">R$ 100.000 a R$ 250.000 / mês</option>
+              <option value="Acima de R$ 250k">Acima de R$ 250.000 / mês</option>
+            </select>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-form" id="submit-btn">
+            <span>Solicitar Diagnóstico Comercial</span>
+          </button>
+          
+          <p class="form-disclaimer">Respeitamos seus dados de acordo com a LGPD. Prometemos não enviar spam.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP WIDGET -->
+  <a href="https://wa.me/558193830343?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20de%20WhatsApp%20CRM%20para%20minha%20empresa." class="whatsapp-widget" target="_blank" rel="noopener noreferrer" aria-label="Falar conosco no WhatsApp">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 2a14 14 0 0 0-12.1 21L2 29l6.3-1.6A14 14 0 1 0 16 2z" fill="#25D366"/>
+      <path d="M22.5 18.7c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1a9 9 0 0 1-2.7-1.7 10 10 0 0 1-1.9-2.3c-.2-.3 0-.5.2-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.2-.7-1.7-1-2.3-.3-.6-.6-.5-.8-.5H13c-.2 0-.6.1-.9.4a3 3 0 0 0-.9 2.2c0 1.4.6 2.8.7 3a13 13 0 0 0 5 4.3c1.3.5 2 .4 2.8.3a3 3 0 0 0 2-1.4c.2-.5.2-1 0-1.2zm1-5a11 11 0 0 0-17 9.5l-2.4 2.4 2.5-2.4a11 11 0 0 0 16.9-9.5z" fill="white"/>
+    </svg>
+  </a>
+
+  <!-- Script JS Link -->
+  <script src="js/script.js"></script>
+</body>
+</html>
